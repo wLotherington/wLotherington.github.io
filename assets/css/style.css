@@ -1,5 +1,7 @@
 /* Generic styles */
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -9,8 +11,9 @@ html {
 
 body {
   color: #333;
-  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-  letter-spacing: .022em;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  letter-spacing: 0.022em;
 }
 
 b {
@@ -65,11 +68,11 @@ nav > a > img {
   height: 3rem;
   opacity: 0.07;
   width: 3rem;
-  transition: all .25s;
+  transition: all 0.25s;
 }
 
 nav > a > img:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 /* Hero styles */
@@ -113,12 +116,16 @@ main > h2 {
   line-height: 3rem;
   text-align: center;
   text-decoration: none;
-  transition: all .25s;
+  transition: all 0.25s;
 }
 
 .hero > article > a:hover {
   background-color: #333;
   color: #eee;
+}
+
+.hero > article > p > a {
+  color: #333;
 }
 
 .hero figure {
@@ -129,6 +136,12 @@ main > h2 {
   filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.15));
   max-height: 500px;
   max-width: 100%;
+}
+
+.hero > figure > audio {
+  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.15));
+  margin-top: 1rem;
+  width: calc(100% - 6rem);
 }
 
 /* Small styles */
@@ -176,13 +189,13 @@ main > h2 {
   border-radius: 1rem;
   color: #333;
   display: inline-block;
-  font-size: .75rem;
+  font-size: 0.75rem;
   margin-right: 0.25rem;
   padding: 0 0.5rem;
   line-height: 1.5rem;
   text-align: center;
   text-decoration: none;
-  transition: all .25s;
+  transition: all 0.25s;
 }
 
 .small > ul > li > a:hover {
@@ -194,7 +207,7 @@ main > h2 {
 footer {
   background-color: #333;
   color: #eee;
-  font-size: .75rem;
+  font-size: 0.75rem;
   font-weight: bold;
   text-align: center;
   line-height: 4rem;
@@ -208,7 +221,7 @@ footer > p > a {
   margin-left: 0.25rem;
   padding: 0.25rem 0.5rem;
   text-decoration: none;
-  transition: all .25s;
+  transition: all 0.25s;
 }
 
 footer > p > a:hover {
@@ -233,7 +246,9 @@ footer > p > a:hover {
 }
 
 @media only screen and (min-width: 2000px) {
-  header, nav, main {
+  header,
+  nav,
+  main {
     max-width: 2000px;
     margin-right: auto;
     margin-left: auto;
