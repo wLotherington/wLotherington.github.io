@@ -45,8 +45,17 @@ header > p {
   max-width: 1000px;
 }
 
-header > p > a {
-  color: #333;
+header > p > a,
+.hero > article > p > a {
+  color: #4c74b9;
+  text-decoration: underline !important;
+  text-decoration-color: #d2dcee !important;
+  transition: all 0.3s ease;
+}
+
+a:hover,
+.hero > article > p > a:hover {
+  text-decoration-color: #829dce !important;
 }
 
 /* Nav styles */
@@ -124,15 +133,12 @@ main > h2 {
   color: #eee;
 }
 
-.hero > article > p > a {
-  color: #333;
-}
-
 .hero figure {
   text-align: center;
 }
 
-.hero > figure > a > img {
+.hero > figure > a > img,
+.hero > figure > iframe {
   filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.15));
   max-height: 500px;
   max-width: 100%;
@@ -173,7 +179,7 @@ main > h2 {
   text-align: center;
 }
 
-.small > ul > li > figure > a > img {
+.small > ul > li > figure > img {
   filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.15));
   max-width: 100%;
   max-height: 200px;
