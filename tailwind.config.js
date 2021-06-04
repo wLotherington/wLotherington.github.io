@@ -13,6 +13,11 @@ module.exports = {
         },
         teal: colors.teal,
         cyan: colors.cyan,
+        link: {
+          normal: "#4c74b9",
+          decoration: "#d2dcee",
+          hover: "#829dce",
+        },
       },
     },
   },
