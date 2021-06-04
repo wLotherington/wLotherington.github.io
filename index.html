@@ -1,13 +1,7 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
   <head>
-    <title>wLotherington</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, min-width=600" />
-    <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <script src="assets/js/viewport.js"></script>
-
+    <meta charset="UTF-8" />
     <!-- Start Favicon  -->
     <link
       rel="apple-touch-icon"
@@ -28,233 +22,293 @@
     />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
     <!-- End Favicon  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wLotherington</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   </head>
   <body>
-    <nav>
-      <a href="mailto:will.lotherington@hey.com" target="_blank"
-        ><img src="images/icons/email.png" alt="Email"
-      /></a>
-      <a href="https://www.linkedin.com/in/wlotherington/" target="_blank"
-        ><img src="images/icons/linkedin.png" alt="LinkedIn"
-      /></a>
-      <!-- <a href="files/Lotherington_Resume.pdf" target="_blank"><img src="images/icons/resume.png" alt="Resume"></a> -->
-      <a href="https://github.com/wlotherington" target="_blank"
-        ><img src="images/icons/github.png" alt="GitHub"
-      /></a>
-      <a href="https://wlotherington.medium.com/" target="_blank"
-        ><img src="images/icons/medium.png" alt="Medium"
-      /></a>
-    </nav>
+    <!-- Contact Buttons -->
+    <div class="flex flex-col fixed z-50 w-12 text-2xl space-y-2 top-3 right-3">
+      <a href="#" id="menu" class="flex h-12 items-center shadow-md justify-center font-medium rounded-md text-white bg-ekko-blue hover:bg-gray-600 ">
+        <i class="fas fa-bars"></i>
+      </a>
+      <a href="mailto:will.lotherington@hey.com" class="menuItem flex h-12 items-center shadow-md justify-center border border-transparent font-medium rounded-full text-white bg-ekko-blue hover:bg-gray-600">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/wlotherington/" class="menuItem flex h-12 items-center shadow-md justify-center border border-transparent font-medium rounded-full text-white bg-ekko-blue hover:bg-gray-600">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/wLotherington" class="menuItem flex h-12 items-center shadow-md justify-center border border-transparent font-medium rounded-full text-white bg-ekko-blue hover:bg-gray-600">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="assets/Will_Lotherington_Resume.pdf" target="_blank" class="menuItem flex h-12 items-center shadow-md justify-center border border-transparent font-medium rounded-full text-white bg-ekko-blue hover:bg-gray-600">
+        <i class="fas fa-file-alt"></i>
+      </a>
+    </div>
 
-    <header>
-      <img src="images/Will.jpg" alt="" />
-      <h2>Hi, I'm Will.</h2>
+    <!-- Header -->
+    <div class="relative py-16 bg-white">
+      <div class="hidden absolute top-0 inset-x-0 h-1/2 bg-white lg:block" aria-hidden="true"></div>
+      <div class="max-w-7xl mx-auto bg-gray-200 lg:bg-transparent lg:px-8">
+        <div class="lg:grid lg:grid-cols-12">
+          <div class="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent">
+            <div class="absolute inset-x-0 h-1/2 bg-white lg:hidden" aria-hidden="true"></div>
+            <div class="max-w-sm mx-auto px-4 sm:px-6 lg:p-0">
+              <div class="aspect-w-1 aspect-h-1">
+                <img class="object-cover object-center rounded-3xl shadow-2xl" src="images/Will.jpg" alt="">
+              </div>
+            </div>
+          </div>
 
-      <p>I am a software engineer currently living in Chicago, IL.</p>
-      <p>
-        I recently built Ekko, an open-source framework allowing developers to
-        easily add realtime infrastructure and in-transit message processing to
-        web applications. It's easy to deploy and ready to scale. If you want to
-        learn more, have a look at the
-        <a href="https://ekko-realtime.com/#case-study" target="_blank"
-          >case study</a
-        >.
-      </p>
-    </header>
+          <div class="relative bg-gray-200 lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center">
+            <div class="relative max-w-md mx-auto py-12 px-4 space-y-6 sm:max-w-3xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6">
+              <h2 class="text-3xl font-extrabold text-gray-900" id="join-heading">Hi! I'm Will</h2>
+              <p class="text-lg text-gray-900">
+                I am a software engineer currently living in Chicago, IL.
+              </p>
+              <p class="text-lg text-gray-900">
+                I recently built Ekko, an open-source framework that provides realtime infrastructure and in-transit message processing for web applications. It's easy to deploy and ready to scale. If you want to learn more, have a look at the case study.
+              </p>
+              <a class="block w-full py-3 px-5 text-center bg-ekko-teal border border-transparent rounded-md shadow-md text-base font-medium text-white hover:opacity-90 sm:inline-block sm:w-auto" href="https://ekko-realtime.com/">Read Ekko Case Study</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <main class="wrapper">
-      <!-- <h2>Highlights</h2> -->
+    <!-- Ekko Project -->
+    <div class="bg-white pt-16 lg:py-24">
+      <div class="pb-16 bg-gradient-to-r from-teal-500 to-cyan-600 lg:pb-0 lg:z-10 lg:relative">
+        <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8">
+          <!-- Small -->
+          <div class="relative lg:hidden">
+            <div aria-hidden="true" class="absolute inset-x-0 top-0 h-1/2 bg-white"></div>
+            <div class="mx-auto max-w-sm px-4 sm:px-6">
+              <div class="aspect-w-1 aspect-h-1 rounded-xl shadow-xl overflow-hidden sm:aspect-w-1 sm:aspect-h-1 border-2 bg-white">
+                <img class="object-contain" src="images/ekko-box.png" alt="">
+              </div>
+            </div>
+          </div>
 
-      <section class="hero" id="ruby-reps">
-        <article>
-          <h2>Project: Ekko</h2>
-          <p>
-            An open-source framework allowing developers to easily add realtime
-            infrastructure and in-transit message processing to web
-            applications. It's easy to deploy and ready to scale.
-          </p>
-          <a href="https://ekko-realtime.com/" target="_blank"
-            >Read Case Study</a
-          >
-          <a href="https://github.com/ekko-realtime" target="_blank">GitHub</a>
-        </article>
-        <figure>
-          <a href="https://ekko-realtime.com/" target="_blank">
-            <img src="images/ekko-box.png" alt="Ruby Reps" />
+          <!-- Bar -->
+          <div class="mt-12 lg:m-0 lg:col-span-2 lg:pl-8">
+            <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:px-0 lg:py-20 lg:max-w-none">
+                <div class="space-y-6">
+                  <p class="text-2xl font-medium text-white">
+                    Ekko is an open-source framework that allows developers to easily deploy realtime infrastructure for their applications. Custom serverless functions provide a flexible, modular way to process messages as they pass through the realtime system.
+                  </p>
+                  <div class="sm:space-x-3 space-y-6 sm:space-y-0">
+                    <a class="block w-full py-3 px-5 text-center bg-white border border-transparent rounded-md shadow-md text-base font-medium text-ekko-teal hover:bg-gray-50 sm:inline-block sm:w-auto" href="https://ekko-realtime.com/">Read Ekko Case Study</a>
+                    <a class="block w-full py-3 px-5 text-center bg-white border border-transparent rounded-md shadow-md text-base font-medium text-ekko-teal hover:bg-gray-50 sm:inline-block sm:w-auto" href="https://ekko-realtime.com/#presentation">Watch Presentation</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <!-- Small -->
+          <div class="relative lg:-my-8 hidden lg:block">
+            <div aria-hidden="true" class="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden"></div>
+            <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">
+              <div class="aspect-w-1 aspect-h-1 rounded-xl shadow-xl overflow-hidden sm:aspect-w-1 sm:aspect-h-1 lg:h-full bg-white">
+                <img class="object-contain border-2 rounded-xl lg:h-full lg:w-full" src="images/ekko-box.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Smnall Projects -->
+    <div class="relative pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+      <div class="absolute inset-0">
+        <div class="bg-white h-1/3 sm:h-2/3"></div>
+      </div>
+      <div class="relative max-w-7xl mx-auto">
+        <div class="text-center">
+          <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
+            Small Projects
+          </h2>
+        </div>
+        <div class="mt-12 max-w-lg mx-auto grid gap-10 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 md:max-w-none">
+
+          <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+            <div class="flex-shrink-0 py-6 bg-black">
+              <img class="h-40 w-full object-cover filter invert" src="images/opensourced.jpg" alt="">
+            </div>
+            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+              <div class="flex-1">
+                <p class="text-xl font-semibold text-gray-900 mt-2">
+                  Podcast Guest
+                </p>
+                <p class="mt-3 text-base text-gray-500">
+                  Joined Ian Lenny on the Opensourced podcast to discuss the challenges and strategies around improving your software development skills while working full time.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+            <div class="flex-shrink-0 p-6 flex justify-center bg-gray-200">
+              <img class="h-40 drop-shadow-lg filter object-scale-down" src="images/reaction.png" alt="">
+            </div>
+            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+              <div class="flex-1">
+                <p class="text-xl font-semibold text-gray-900 mt-2">
+                  Reaction
+                </p>
+                <p class="mt-3 text-base text-gray-500">
+                  Trello-like task management app.
+                </p>
+                <p class="mt-3 text-base text-gray-500">
+                  Node.js/Express, MongoDB, React/Redux
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+            <div class="flex-shrink-0 p-6 flex justify-center bg-gray-200">
+              <img class="h-40 drop-shadow-lg filter object-scale-down" src="images/request_bin.png" alt="">
+            </div>
+            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+              <div class="flex-1">
+                <p class="text-xl font-semibold text-gray-900 mt-2">
+                  Request Bin
+                </p>
+                <p class="mt-3 text-base text-gray-500">
+                  RequestBin-like tool for receiving and debugging webhooks.
+                </p>
+                <p class="mt-3 text-base text-gray-500">
+                  Node.js/Express, PostgreSQL, Socket.IO, Handlebars.js, TailwindCSS
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+            <div class="flex-shrink-0 p-6 flex justify-center bg-gray-200">
+              <img class="h-40 drop-shadow-lg filter object-scale-down" src="images/ruby_reps.png" alt="">
+            </div>
+            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+              <div class="flex-1">
+                <p class="text-xl font-semibold text-gray-900 mt-2">
+                  Ruby Reps
+                </p>
+                <p class="mt-3 text-base text-gray-500">
+                  Preloaded executable spaced repetition flashcard app for practicing Ruby methods.
+                </p>
+                <p class="mt-3 text-base text-gray-500">
+                  Ruby/Sinatra, ERB, jQuery, PostgreSQL
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+            <div class="flex-shrink-0 p-6 flex justify-center bg-gray-200">
+              <img class="h-40 drop-shadow-lg filter object-scale-down" src="images/postit.png" alt="">
+            </div>
+            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+              <div class="flex-1">
+                <p class="text-xl font-semibold text-gray-900 mt-2">
+                  Postit
+                </p>
+                <p class="mt-3 text-base text-gray-500">
+                  Reddit-like social message boaard.
+                </p>
+                <p class="mt-3 text-base text-gray-500">
+                  Ruby/Rails, ERB, Bootstrap, PostrgreSQL, Twilio
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+            <div class="flex-shrink-0 p-6 flex justify-center bg-gray-200">
+              <img class="h-40 drop-shadow-lg filter object-scale-down" src="images/dijkstra.png" alt="">
+            </div>
+            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+              <div class="flex-1">
+                <p class="text-xl font-semibold text-gray-900 mt-2">
+                  Dijkstra's Trip
+                </p>
+                <p class="mt-3 text-base text-gray-500">
+                  Airline routing application leveraging Dijkstra's algorithm to find the shortest path.
+                </p>
+                <p class="mt-3 text-base text-gray-500">
+                  React, JavaScript
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+            <div class="flex-shrink-0 p-6 flex justify-center bg-gray-200">
+              <img class="h-40 drop-shadow-lg filter object-scale-down" src="images/contact_manager.png" alt="">
+            </div>
+            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+              <div class="flex-1">
+                <p class="text-xl font-semibold text-gray-900 mt-2">
+                  Contact Manager
+                </p>
+                <p class="mt-3 text-base text-gray-500">
+                  Efficient single page contact manager.
+                </p>
+                <p class="mt-3 text-base text-gray-500">
+                  Node.js/Express, JavaScript, jQuery
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+            <div class="flex-shrink-0 p-6 flex justify-center bg-gray-200">
+              <img class="h-40 drop-shadow-lg filter object-scale-down" src="images/price_estimator.png" alt="">
+            </div>
+            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+              <div class="flex-1">
+                <p class="text-xl font-semibold text-gray-900 mt-2">
+                  Price Estimator
+                </p>
+                <p class="mt-3 text-base text-gray-500">
+                  iPhone optimized price estimator application to enable salespeople to quickly estimate prices.
+                </p>
+                <p class="mt-3 text-base text-gray-500">
+                  JavaScript
+                </p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="bg-ekko-blue">
+      <div class="mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+          <span class="block">Let's Connect!</span>
+        </h2>
+        <p class="mt-4 mb-4 text-lg leading-6 text-gray-200">I am looking for my next opportunity! Please get in touch if you think I'd be a good fit for your team.</p>
+        <div class="flex items-center justify-center flex-wrap">
+          <a href="mailto:will.lotherington@hey.com" class="w-1/3 mt-4 mx-2 inline-flex items-center shadow-md justify-center px-5 py-2 border border-transparent text-xs font-medium rounded-md text-ekko-blue bg-white hover:bg-gray-50 sm:w-auto">
+            <span class="text-xl mr-3"><i class="fas fa-envelope"></i></span>Email
           </a>
-        </figure>
-      </section>
-
-      <section class="hero" id="opensourced">
-        <article>
-          <h2>Talk: Ekko</h2>
-          <p>My 3 teammates and I introduce Ekko.</p>
-          <p>
-            We discuss what realtime web applications are,
-            <b
-              >why they often need dedicated realtime infrastructure and
-              middleware</b
-            >
-            (and what exactly that is), how we built Ekko, and what major
-            engineering challenges we encountered.
-          </p>
-          <a href="https://ekko-realtime.com/" target="_blank"
-            >Read Case Study</a
-          ><a href="https://www.youtube.com/watch?v=L-rbSRf2BrU" target="_blank"
-            >Watch on YouTube</a
-          >
-        </article>
-        <figure>
-          <iframe
-            width="2000"
-            height="2000"
-            src="https://www.youtube.com/embed/L-rbSRf2BrU?modestbranding=1&rel=0"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </figure>
-      </section>
-
-      <section class="hero" id="opensourced">
-        <article>
-          <h2>Podcast: How To Learn To Code While Working Full Time</h2>
-          <p>
-            Joined Ian Lenny on the
-            <a href="https://www.opensourced.com/" target="_blank"
-              >Opensourced</a
-            >
-            podcast in October of 2019 to discuss the challenges and strategies
-            around progressing through the
-            <a href="https://launchschool.com/" target="_blank"
-              >Launch School</a
-            >
-            core curriculum while working full time.
-          </p>
-          <a
-            href="https://www.opensourced.com/posts/how-to-learn-to-code-while-working-full-time-william-lotherington"
-            target="_blank"
-            >Listen Now</a
-          >
-        </article>
-        <figure>
-          <a
-            href="https://www.opensourced.com/posts/how-to-learn-to-code-while-working-full-time-william-lotherington"
-            target="_blank"
-          >
-            <img src="images/opensourced.png" alt="Openn Sourced" />
+          <a href="https://www.linkedin.com/in/wlotherington/" class="w-1/3 mt-4 mx-2 inline-flex items-center shadow-md justify-center px-5 py-2 border border-transparent text-xs font-medium rounded-md text-ekko-blue bg-white hover:bg-gray-50 sm:w-auto">
+            <span class="text-xl mr-3"><i class="fab fa-linkedin"></i></span>LinkedIn
           </a>
-          <audio controls>
-            <source src="files/opensourced.mp3" type="audio/mpeg" />
-            Your browser does not support the audio element.
-          </audio>
-        </figure>
-      </section>
+          <a href="https://github.com/wLotherington" class="w-1/3 mt-4 mx-2 inline-flex items-center shadow-md justify-center px-5 py-2 border border-transparent text-xs font-medium rounded-md text-ekko-blue bg-white hover:bg-gray-50 sm:w-auto">
+            <span class="text-xl mr-3"><i class="fab fa-github"></i></span>GitHub
+          </a>
+          <a href="assets/Will_Lotherington_Resume.pdf" target="_blank" class="w-1/3 mt-4 mx-2 inline-flex items-center shadow-md justify-center px-5 py-2 border border-transparent text-xs font-medium rounded-md text-ekko-blue bg-white hover:bg-gray-50 sm:w-auto">
+            <span class="text-xl mr-3"><i class="fas fa-file-alt"></i></span>Resume
+          </a>
+        </div>
+      </div>
+    </div>
 
-      <h2>Small Projects</h2>
-
-      <section class="small" id="small">
-        <ul>
-          <li>
-            <h2>Request Bin</h2>
-            <figure>
-              <img src="images/request_bin.png" alt="RequestBin" />
-            </figure>
-            <p>RequestBin clone built with ExpressJS & Socket.io</p>
-          </li>
-
-          <li>
-            <h2>Ruby Reps</h2>
-            <figure>
-              <img src="images/ruby_reps.png" alt="Ruby Reps" />
-            </figure>
-            <p>
-              Preloaded executable spaced repetition flashcard app built with
-              Ruby, Sinatra, and PostgreSQL.
-            </p>
-          </li>
-
-          <li>
-            <h2>Postit</h2>
-            <figure>
-              <img src="images/postit.png" alt="Postit" />
-            </figure>
-            <p>Reddit clone built with Ruby on Rails & PostgreSQL.</p>
-          </li>
-
-          <li>
-            <h2>Dijkstra's Trip</h2>
-            <figure>
-              <img src="images/dijkstra.png" alt="Dijkstra's Trip" />
-            </figure>
-            <p>
-              React app to find the shortest route between 2 airports using
-              Dijkstra's algorithm.
-            </p>
-          </li>
-
-          <li>
-            <h2>Contact Manager</h2>
-            <figure>
-              <img src="images/contact_manager.png" alt="Contact Manager" />
-            </figure>
-            <p>Contact manager built with JavaScript, jQuery, and NodeJS.</p>
-          </li>
-
-          <li>
-            <h2>Todo List</h2>
-            <figure>
-              <img src="images/todo_list.png" alt="Todo List" />
-            </figure>
-            <p>Todo list built with Sinatra, jQuery, and PostgreSQL.</p>
-          </li>
-
-          <li>
-            <h2>Book Viewer</h2>
-            <figure>
-              <img src="images/book_viewer.png" alt="Book Viewer" />
-            </figure>
-            <p>Sinatra book viewer app with full text search.</p>
-          </li>
-
-          <li>
-            <h2>Price Estimator</h2>
-            <figure>
-              <img src="images/price_estimator.png" alt="Price Estimator" />
-            </figure>
-            <p>Vanilla JS app to help salespeople estimate price.</p>
-          </li>
-
-          <li>
-            <h2>Platos Chair</h2>
-            <figure>
-              <img src="images/platos_chair.png" alt="Platos Chair" />
-            </figure>
-            <p>
-              Google image aggregator built with Ruby, Sinatra, and Google image
-              search API.
-            </p>
-          </li>
-
-          <li>
-            <h2>Fitness Tracker</h2>
-            <figure>
-              <img src="images/fit.png" alt="Fitness Tracker" />
-            </figure>
-            <p>Sinatra fitness tracker to record weight and workouts.</p>
-          </li>
-        </ul>
-      </section>
-    </main>
-
-    <footer>
-      <p>
-        Let's connect!
-        <a href="mailto:Will.Lotherington@hey.com" target="_blank"
-          >Will.Lotherington@hey.com</a
-        >
-      </p>
-    </footer>
+    <script type="module" src="/main.js"></script>
   </body>
 </html>
